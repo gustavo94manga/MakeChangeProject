@@ -23,9 +23,10 @@ public class MakeChange {
 		else if (payment > price && payment < 100) {
 			
 		double change = payment - price; // basic equation to calculate their change
-
-		System.out.println("Your change is: " + change); // Show them how much their change is
+		
+		System.out.printf("Your change is: " + "%.2f %n", change); // Show them how much their change is
 															// If Payment = $35, Price: $5.99 (change = $29.009)
+
 
 		int twenty = (int) change / 20; // Casting changes double 29.009 to (int) so 29 / 20 = 1
 		change = change - (20 * twenty); // change = 29 - (20 x 1) = 9 So change = 9
